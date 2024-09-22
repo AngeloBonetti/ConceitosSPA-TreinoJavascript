@@ -1,0 +1,101 @@
+@import url(../fonts/roboto.css);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root{
+    font-size: 62.5%;
+    --cor-texto-principal: #E1E1E6;
+    --cor-nav-inativo: #C4C4CC;
+    --cor-nav-ativo: #FFFFFF;
+    --cor-borda-button: #FFFF;
+}
+
+body{
+    background-image: url(../images/background-home.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    height:100vh;
+}
+
+h1{
+    font-family: "Roboto", sans-serif;
+    font-size: 4.8rem;
+    color: var(--cor-texto-principal);
+}
+
+a{
+    font-size: 2.1rem;
+    font-family: "Roboto", sans-serif;
+    color: var(--cor-nav-inativo);
+}
+
+header{
+    display: flex;
+    gap: 4.3rem;
+    align-items: center;
+    padding: 5rem;
+}
+
+nav{
+    display: flex;
+    gap: 4.2rem;
+}
+
+nav a {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover{
+    color: var(--cor-nav-ativo);
+    transform: scale(1.2);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2)
+}
+
+main{
+    text-align: center;
+    margin-top: 25rem;
+}
+
+section{
+    text-align: justify;
+    margin: 6.3rem 0 0 10.2rem;
+    width: 64.8rem;
+}
+
+section p {
+    font-size: 1.8rem;
+    color: var(--cor-texto-principal);
+    font-family: "Roboto", sans-serif;
+    line-height: 3rem;
+}
+
+section h1{
+    margin-bottom: 1.6rem;
+}
+
+button{
+    border: none;
+    background: transparent;
+    margin-top: 2.4rem;
+}
+
+button a{
+    font-size: 1.4rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 1.2rem 3.2rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--cor-borda-button);
+}
+
+button a:hover{
+    background-color: #c4c4cc41;
+    
+}
