@@ -3,7 +3,7 @@ import { Router } from "./router.js";
 const router = new Router();
 
 router.add("/[object%20HTMLImageElement]", "./assets/pages/home.html");
-router.add("/index.html", "./assets/pages/home.html");
+router.add("/", "./assets/pages/home.html");
 router.add("/home", "./assets/pages/home.html");
 router.add("/oUniverso", "./assets/pages/oUniverso.html");
 router.add("/exploracao", "./assets/pages/exploracao.html");
